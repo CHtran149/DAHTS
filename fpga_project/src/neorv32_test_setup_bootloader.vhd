@@ -19,7 +19,7 @@ entity neorv32_test_setup_bootloader is
   generic (
     -- adapt these for your setup --
     CLOCK_FREQUENCY : natural := 27000000; -- clock frequency of clk_i in Hz
-    IMEM_SIZE       : natural := 16*1024;   -- size of processor-internal instruction memory in bytes
+    IMEM_SIZE       : natural := 32*1024;   -- size of processor-internal instruction memory in bytes
     DMEM_SIZE       : natural := 8*1024     -- size of processor-internal data memory in bytes
   );
   port (
@@ -28,6 +28,8 @@ entity neorv32_test_setup_bootloader is
     rstn_i      : in  std_ulogic; -- global reset, low-active, async
     -- GPIO --
     gpio_o      : out std_ulogic_vector(7 downto 0); -- parallel output
+    gpio_i      : in  std_ulogic_vector(7 downto 0); -- Thêm dòng này để đọc Button
+
     -- UART0 --
     uart0_txd_o : out std_ulogic; -- UART0 send data
     uart0_rxd_i : in  std_ulogic;  -- UART0 receive data
@@ -50,7 +52,8 @@ architecture neorv32_test_setup_bootloader_rtl of neorv32_test_setup_bootloader 
   signal twi_scl_out_internal : std_ulogic;
 
   signal con_gpio_out : std_ulogic_vector(31 downto 0);
-
+  signal con_gpio_in  : std_ulogic_vector(31 downto 0) := (others => '0');
+  
 begin
 
   -- The Core Of The Problem ----------------------------------------------------------------
@@ -90,6 +93,8 @@ begin
     rstn_i      => rstn_i,       -- global reset, low-active, async
     -- GPIO (available if IO_GPIO_NUM > 0) --
     gpio_o      => con_gpio_out, -- parallel output
+    gpio_i      => con_gpio_in, -- Nối vào đây
+
     -- primary UART0 (available if IO_UART0_EN = true) --
     uart0_txd_o => uart0_txd_o,  -- UART0 send data
     uart0_rxd_i => uart0_rxd_i,   -- UART0 receive data
@@ -110,6 +115,11 @@ begin
 
   -- GPIO output --
   gpio_o <= con_gpio_out(7 downto 0);
+  
+  -- Gán 8 bit từ chân vật lý vào tín hiệu trung gian 32-bit
+  con_gpio_in(7 downto 0) <= gpio_i; 
+  -- Các bit còn lại (từ 8 đến 31) phải gán mặc định là '0' để tránh trạng thái trôi (floating)
+  con_gpio_in(31 downto 8) <= (others => '0');
 
   -- Logic đơn giản: 
   -- Nếu output của NEORV32 là '0', chân sẽ bị kéo xuống thấp.

@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_test_setup_bootloader.vhd",
-    "InstLine" : 58,
+    "InstLine" : 61,
     "InstName" : "neorv32_top_inst",
     "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
     "ModuleLine" : 21,

@@ -5,6 +5,31 @@
 #include "OLED_LCD_SSD1306.h"
 #include "fonts.h"
 
+#define OUT_PIN_BUZZER 0
+#define IN_PIN_BUTTON 0
+
+// --- KHAI BÁO PROTOTYPE (Để trình biên dịch biết trước) ---
+void uart0_puts(const char *s);
+void uart0_putu(uint32_t n);
+
+// Biến cờ cảnh báo (dùng volatile vì được thay đổi trong hàm ngắt)
+volatile uint8_t is_muted = 0;
+
+// --- Hàm xử lý ngắt (ISR) ---
+void my_gpio_irq_handler(void) {
+    // 1. Kiểm tra xem có phải ngắt từ chân nút nhấn không
+    if (neorv32_gpio_irq_get() & (1 << IN_PIN_BUTTON)) {
+        uart0_puts("Da nhan nut");
+        is_muted = !is_muted; // Nếu đang 0 thành 1, đang 1 thành 0
+        if (is_muted) {
+            neorv32_gpio_pin_set(OUT_PIN_BUZZER, 1); 
+        }
+        
+        // 2. Xoá cờ ngắt
+        neorv32_gpio_irq_clr(1 << IN_PIN_BUTTON);
+    }
+}
+
 // 1. Hàm in chuỗi thô (Thay thế printf cho chuỗi)
 void uart0_puts(const char *s) {
     while (*s) neorv32_uart0_putc(*s++);
@@ -67,9 +92,17 @@ void float_to_buf_fixed(char *buf, float val, int precision) {
 }
 
 int main() {
-    // Không dùng neorv32_rte_setup(); để tiết kiệm ROM
     neorv32_uart0_setup(19200, 0);
     PZEM_Init(9600);
+    neorv32_gpio_port_set(0x00000000);
+    // --- CẤU HÌNH NGẮT (RTE) ---
+    neorv32_rte_setup(); 
+    neorv32_rte_handler_install(GPIO_TRAP_CODE, my_gpio_irq_handler);
+    neorv32_gpio_irq_setup(IN_PIN_BUTTON, GPIO_TRIG_EDGE_FALLING);
+    neorv32_gpio_irq_enable(1 << IN_PIN_BUTTON);
+    neorv32_cpu_csr_set(CSR_MIE, 1U << GPIO_FIRQ_ENABLE);
+    neorv32_cpu_csr_set(CSR_MSTATUS, 1U << CSR_MSTATUS_MIE);
+
     neorv32_twi_setup(7, 0, 0); 
     neorv32_twi_enable();
 
@@ -91,21 +124,36 @@ int main() {
     
     SSD1306_UpdateScreen(&myOLED);
 
+
     char val_buf[8];
 
     while (1) {
         PZEM_ReadAll(1000);
-        
+        float power = PZEM_GetPower();
+        // --- Logic Cảnh báo ---
+        if (power > 5.0) {
+            // KHÔNG ép còi về 1 ở đây nếu đã mute, 
+            // mà chỉ bật còi nếu CHƯA mute
+            if (!is_muted) {
+                neorv32_gpio_pin_set(OUT_PIN_BUZZER, 0); // Bật còi
+            } else {
+                neorv32_gpio_pin_set(OUT_PIN_BUZZER, 1); // Tắt còi (do đang mute)
+            }
+        } else {
+            // Khi công suất thấp, reset lại trạng thái cho lần cảnh báo sau
+            is_muted = 0; 
+            neorv32_gpio_pin_set(OUT_PIN_BUZZER, 1); // Tắt còi
+        }
         // --- In Log UART (Dùng hàm mới, tuyệt đối không dùng printf) ---
-        uart0_puts("D:");
-        neorv32_uart_print_float(PZEM_GetVoltage(), 1);
-        uart0_puts("V ");
-        neorv32_uart_print_float(PZEM_GetCurrent(), 2);
-        uart0_puts("A\r\n");
-        neorv32_uart_print_float(PZEM_GetPower(), 3);
-        uart0_puts("W\r\n");
-        neorv32_uart_print_float(PZEM_GetFrequency(), 4);
-        uart0_puts("Hz\r\n");
+        // uart0_puts("D:");
+        // neorv32_uart_print_float(PZEM_GetVoltage(), 1);
+        // uart0_puts("V ");
+        // neorv32_uart_print_float(PZEM_GetCurrent(), 2);
+        // uart0_puts("A\r\n");
+        // neorv32_uart_print_float(PZEM_GetPower(), 3);
+        // uart0_puts("W\r\n");
+        // neorv32_uart_print_float(PZEM_GetFrequency(), 4);
+        // uart0_puts("Hz\r\n");
 
         // --- Cập nhật OLED ---
         float_to_buf_fixed(val_buf, PZEM_GetVoltage(), 1);

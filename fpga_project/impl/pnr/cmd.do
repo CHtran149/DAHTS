@@ -1,8 +1,8 @@
--d E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\impl\gwsynthesis\fpga_project.vg
+-d E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\Baitaplon\fpga_project\impl\gwsynthesis\fpga_project.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\fpga_project.cst
--cfg E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\impl\pnr\device.cfg
+-cst E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\Baitaplon\fpga_project\src\fpga_project.cst
+-cfg E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\Baitaplon\fpga_project\impl\pnr\device.cfg
 -bit
 -tr
 -ph

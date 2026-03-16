@@ -292,7 +292,7 @@ typedef union {
 #include "neorv32_neoled.h"
 #include "neorv32_onewire.h"
 #include "neorv32_pwm.h"
-//#include "neorv32_rte.h"
+#include "neorv32_rte.h"
 #include "neorv32_semihosting.h"
 #include "neorv32_sdi.h"
 #include "neorv32_slink.h"

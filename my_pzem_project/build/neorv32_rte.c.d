@@ -8,6 +8,7 @@ build/neorv32_rte.c.o: ../../sw/lib/source/neorv32_rte.c \
  neorv32_lib/include/neorv32_legacy.h \
  neorv32_lib/include/neorv32_neoled.h \
  neorv32_lib/include/neorv32_onewire.h neorv32_lib/include/neorv32_pwm.h \
+ neorv32_lib/include/neorv32_rte.h \
  neorv32_lib/include/neorv32_semihosting.h \
  neorv32_lib/include/neorv32_sdi.h neorv32_lib/include/neorv32_slink.h \
  neorv32_lib/include/neorv32_smp.h neorv32_lib/include/neorv32_spi.h \
@@ -30,6 +31,7 @@ neorv32_lib/include/neorv32_legacy.h:
 neorv32_lib/include/neorv32_neoled.h:
 neorv32_lib/include/neorv32_onewire.h:
 neorv32_lib/include/neorv32_pwm.h:
+neorv32_lib/include/neorv32_rte.h:
 neorv32_lib/include/neorv32_semihosting.h:
 neorv32_lib/include/neorv32_sdi.h:
 neorv32_lib/include/neorv32_slink.h:

@@ -32,6 +32,8 @@ USER_FLAGS += -Wl,--gc-sections
 # Đặt lại dung lượng chuẩn để kiểm soát lỗi khi Make
 USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=16k
 USER_FLAGS += -Wl,--defsym,__neorv32_ram_size=8k
+USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=32k
+
 # Đường dẫn NEORV32 root
 NEORV32_HOME ?= ../..
 

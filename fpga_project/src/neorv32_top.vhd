@@ -83,7 +83,7 @@ entity neorv32_top is
     -- Internal Instruction memory (IMEM) --
     IMEM_EN             : boolean                        := false;         -- implement processor-internal instruction memory
     IMEM_BASE           : std_ulogic_vector(31 downto 0) := x"00000000";   -- base address of processor-internal instruction memory (naturally aligned)
-    IMEM_SIZE           : natural                        := 16*1024;       -- size of processor-internal instruction memory in bytes (use a power of 2)
+    IMEM_SIZE           : natural                        := 32*1024;       -- size of processor-internal instruction memory in bytes (use a power of 2)
     IMEM_OUTREG_EN      : boolean                        := false;         -- enable IMEM output register stage (for improved mapping/timing)
 
     -- Internal Data memory (DMEM) --
