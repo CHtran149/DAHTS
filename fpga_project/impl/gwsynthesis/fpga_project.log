@@ -1,0 +1,272 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_package.vhd'
+Analyzing package 'neorv32_package'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_package.vhd":15)
+Analyzing package body 'neorv32_package'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_package.vhd":1021)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom.vhd'
+Analyzing entity 'neorv32_bootrom'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom.vhd":17)
+Analyzing architecture 'neorv32_bootrom_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom.vhd":26)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_image.vhd'
+Analyzing package 'neorv32_bootrom_image'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_image.vhd":4)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_rom.vhd'
+Analyzing entity 'neorv32_bootrom_rom'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_rom.vhd":21)
+Analyzing architecture 'neorv32_bootrom_rom_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_rom.vhd":33)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd'
+Analyzing entity 'neorv32_bus_switch'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":17)
+Analyzing architecture 'neorv32_bus_switch_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":35)
+Analyzing entity 'neorv32_bus_reg'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":173)
+Analyzing architecture 'neorv32_bus_reg_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":190)
+Analyzing entity 'neorv32_bus_gateway'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":266)
+Analyzing architecture 'neorv32_bus_gateway_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":305)
+Analyzing entity 'neorv32_bus_io_switch'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":469)
+Analyzing architecture 'neorv32_bus_io_switch_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":549)
+Analyzing entity 'neorv32_bus_amo_rmw'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":704)
+Analyzing architecture 'neorv32_bus_amo_rmw_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":718)
+Analyzing entity 'neorv32_bus_amo_rvs'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":858)
+Analyzing architecture 'neorv32_bus_amo_rvs_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":872)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache.vhd'
+Analyzing entity 'neorv32_cache'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache.vhd":28)
+Analyzing architecture 'neorv32_cache_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache.vhd":46)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd'
+Analyzing entity 'neorv32_prim_fifo'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":24)
+Analyzing architecture 'neorv32_prim_fifo_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":46)
+Analyzing entity 'neorv32_prim_spram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":168)
+Analyzing architecture 'neorv32_prim_spram_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":186)
+Analyzing entity 'neorv32_prim_mul'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":259)
+Analyzing architecture 'neorv32_prim_mul_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":277)
+Analyzing entity 'neorv32_prim_cnt'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":332)
+Analyzing architecture 'neorv32_prim_cnt_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":349)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache_ram.vhd'
+Analyzing entity 'neorv32_cache_ram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache_ram.vhd":20)
+Analyzing architecture 'neorv32_cache_ram_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cache_ram.vhd":40)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cfs.vhd'
+Analyzing entity 'neorv32_cfs'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cfs.vhd":18)
+Analyzing architecture 'neorv32_cfs_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cfs.vhd":34)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd'
+Analyzing entity 'neorv32_clint'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":21)
+Analyzing architecture 'neorv32_clint_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":36)
+Analyzing entity 'neorv32_clint_mtimecmp'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":218)
+Analyzing architecture 'neorv32_clint_mtimecmp_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":231)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_decompressor.vhd'
+Analyzing entity 'neorv32_cpu_decompressor'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_decompressor.vhd":21)
+Analyzing architecture 'neorv32_cpu_decompressor_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_decompressor.vhd":31)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd'
+Analyzing entity 'neorv32_cpu_frontend'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":22)
+Analyzing architecture 'neorv32_cpu_frontend_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":45)
+Analyzing entity 'neorv32_cpu_frontend_ipb'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":326)
+Analyzing architecture 'neorv32_cpu_frontend_ipb_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":347)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_control.vhd'
+Analyzing entity 'neorv32_cpu_control'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_control.vhd":18)
+Analyzing architecture 'neorv32_cpu_control_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_control.vhd":91)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_hwtrig.vhd'
+Analyzing entity 'neorv32_cpu_hwtrig'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_hwtrig.vhd":21)
+Analyzing architecture 'neorv32_cpu_hwtrig_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_hwtrig.vhd":39)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_counters.vhd'
+Analyzing entity 'neorv32_cpu_counters'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_counters.vhd":23)
+Analyzing architecture 'neorv32_cpu_counters_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_counters.vhd":42)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_regfile.vhd'
+Analyzing entity 'neorv32_cpu_regfile'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_regfile.vhd":28)
+Analyzing architecture 'neorv32_cpu_regfile_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_regfile.vhd":46)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_shifter.vhd'
+Analyzing entity 'neorv32_cpu_alu_shifter'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_shifter.vhd":21)
+Analyzing architecture 'neorv32_cpu_alu_shifter_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_shifter.vhd":39)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_muldiv.vhd'
+Analyzing entity 'neorv32_cpu_alu_muldiv'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_muldiv.vhd":23)
+Analyzing architecture 'neorv32_cpu_alu_muldiv_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_muldiv.vhd":42)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_bitmanip.vhd'
+Analyzing entity 'neorv32_cpu_alu_bitmanip'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_bitmanip.vhd":27)
+Analyzing architecture 'neorv32_cpu_alu_bitmanip_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_bitmanip.vhd":53)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd'
+Analyzing entity 'neorv32_cpu_alu_fpu'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":33)
+Analyzing architecture 'neorv32_cpu_alu_fpu_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":59)
+Analyzing entity 'neorv32_cpu_alu_fpu_normalizer'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":1521)
+Analyzing architecture 'neorv32_cpu_alu_fpu_normalizer_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":1547)
+Analyzing entity 'neorv32_cpu_alu_fpu_f2i'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":1956)
+Analyzing architecture 'neorv32_cpu_alu_fpu_f2i_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_fpu.vhd":1980)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cfu.vhd'
+Analyzing entity 'neorv32_cpu_alu_cfu'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cfu.vhd":18)
+Analyzing architecture 'neorv32_cpu_alu_cfu_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cfu.vhd":49)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cond.vhd'
+Analyzing entity 'neorv32_cpu_alu_cond'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cond.vhd":17)
+Analyzing architecture 'neorv32_cpu_alu_cond_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_cond.vhd":32)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_crypto.vhd'
+Analyzing entity 'neorv32_cpu_alu_crypto'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_crypto.vhd":25)
+Analyzing architecture 'neorv32_cpu_alu_crypto_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_crypto.vhd":47)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu.vhd'
+Analyzing entity 'neorv32_cpu_alu'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu.vhd":18)
+Analyzing architecture 'neorv32_cpu_alu_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu.vhd":60)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_lsu.vhd'
+Analyzing entity 'neorv32_cpu_lsu'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_lsu.vhd":18)
+Analyzing architecture 'neorv32_cpu_lsu_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_lsu.vhd":42)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_pmp.vhd'
+Analyzing entity 'neorv32_cpu_pmp'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_pmp.vhd":22)
+Analyzing architecture 'neorv32_cpu_pmp_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_pmp.vhd":46)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_trace.vhd'
+Analyzing entity 'neorv32_cpu_trace'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_trace.vhd":18)
+Analyzing architecture 'neorv32_cpu_trace_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_trace.vhd":36)
+Analyzing entity 'neorv32_cpu_trace_simlog'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_trace.vhd":182)
+Analyzing architecture 'neorv32_cpu_trace_simlog_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_trace.vhd":193)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu.vhd'
+Analyzing entity 'neorv32_cpu'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu.vhd":21)
+Analyzing architecture 'neorv32_cpu_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu.vhd":99)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_auth.vhd'
+Analyzing entity 'neorv32_debug_auth'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_auth.vhd":19)
+Analyzing architecture 'neorv32_debug_auth_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_auth.vhd":36)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dm.vhd'
+Analyzing entity 'neorv32_debug_dm'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dm.vhd":21)
+Analyzing architecture 'neorv32_debug_dm_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dm.vhd":42)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dtm.vhd'
+Analyzing entity 'neorv32_debug_dtm'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dtm.vhd":19)
+Analyzing architecture 'neorv32_debug_dtm_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_debug_dtm.vhd":40)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dma.vhd'
+Analyzing entity 'neorv32_dma'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dma.vhd":18)
+Analyzing architecture 'neorv32_dma_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dma.vhd":33)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem.vhd'
+Analyzing entity 'neorv32_dmem'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem.vhd":17)
+Analyzing architecture 'neorv32_dmem_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem.vhd":30)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem_ram.vhd'
+Analyzing entity 'neorv32_dmem_ram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem_ram.vhd":20)
+Analyzing architecture 'neorv32_dmem_ram_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem_ram.vhd":35)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gpio.vhd'
+Analyzing entity 'neorv32_gpio'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gpio.vhd":17)
+Analyzing architecture 'neorv32_gpio_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gpio.vhd":32)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd'
+Analyzing entity 'neorv32_gptmr'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":20)
+Analyzing architecture 'neorv32_gptmr_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":34)
+Analyzing entity 'neorv32_gptmr_slice'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":211)
+Analyzing architecture 'neorv32_gptmr_slice_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":230)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem.vhd'
+Analyzing entity 'neorv32_imem'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem.vhd":17)
+Analyzing architecture 'neorv32_imem_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem.vhd":31)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_image.vhd'
+Analyzing package 'neorv32_imem_image'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_image.vhd":4)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_ram.vhd'
+Analyzing entity 'neorv32_imem_ram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_ram.vhd":20)
+Analyzing architecture 'neorv32_imem_ram_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_ram.vhd":35)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_rom.vhd'
+Analyzing entity 'neorv32_imem_rom'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_rom.vhd":21)
+Analyzing architecture 'neorv32_imem_rom_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_rom.vhd":34)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_neoled.vhd'
+Analyzing entity 'neorv32_neoled'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_neoled.vhd":18)
+Analyzing architecture 'neorv32_neoled_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_neoled.vhd":33)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_onewire.vhd'
+Analyzing entity 'neorv32_onewire'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_onewire.vhd":18)
+Analyzing architecture 'neorv32_onewire_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_onewire.vhd":34)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_pwm.vhd'
+Analyzing entity 'neorv32_pwm'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_pwm.vhd":21)
+Analyzing architecture 'neorv32_pwm_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_pwm.vhd":35)
+Analyzing entity 'neorv32_pwm_channel'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_pwm.vhd":187)
+Analyzing architecture 'neorv32_pwm_channel_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_pwm.vhd":208)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sdi.vhd'
+Analyzing entity 'neorv32_sdi'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sdi.vhd":18)
+Analyzing architecture 'neorv32_sdi_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sdi.vhd":35)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_slink.vhd'
+Analyzing entity 'neorv32_slink'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_slink.vhd":18)
+Analyzing architecture 'neorv32_slink_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_slink.vhd":45)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_spi.vhd'
+Analyzing entity 'neorv32_spi'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_spi.vhd":18)
+Analyzing architecture 'neorv32_spi_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_spi.vhd":36)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd'
+Analyzing entity 'neorv32_sys_reset'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":17)
+Analyzing architecture 'neorv32_sys_reset_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":34)
+Analyzing entity 'neorv32_sys_clock'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":97)
+Analyzing architecture 'neorv32_sys_clock_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":106)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sysinfo.vhd'
+Analyzing entity 'neorv32_sysinfo'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sysinfo.vhd":18)
+Analyzing architecture 'neorv32_sysinfo_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sysinfo.vhd":67)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_test_setup_bootloader.vhd'
+Analyzing entity 'neorv32_test_setup_bootloader'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_test_setup_bootloader.vhd":18)
+Analyzing architecture 'neorv32_test_setup_bootloader_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_test_setup_bootloader.vhd":46)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_xbus.vhd'
+Analyzing entity 'neorv32_xbus'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_xbus.vhd":21)
+Analyzing architecture 'neorv32_xbus_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_xbus.vhd":45)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_wdt.vhd'
+Analyzing entity 'neorv32_wdt'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_wdt.vhd":18)
+Analyzing architecture 'neorv32_wdt_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_wdt.vhd":31)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_uart.vhd'
+Analyzing entity 'neorv32_uart'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_uart.vhd":24)
+Analyzing architecture 'neorv32_uart_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_uart.vhd":43)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twi.vhd'
+Analyzing entity 'neorv32_twi'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twi.vhd":18)
+Analyzing architecture 'neorv32_twi_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twi.vhd":36)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twd.vhd'
+Analyzing entity 'neorv32_twd'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twd.vhd":18)
+Analyzing architecture 'neorv32_twd_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twd.vhd":36)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd'
+Analyzing entity 'neorv32_trng'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":20)
+Analyzing architecture 'neorv32_trng_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":33)
+Analyzing entity 'neotrng'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":223)
+Analyzing architecture 'neotrng_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":239)
+Analyzing entity 'neotrng_cell'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":399)
+Analyzing architecture 'neotrng_cell_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_trng.vhd":413)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_tracer.vhd'
+Analyzing entity 'neorv32_tracer'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_tracer.vhd":18)
+Analyzing architecture 'neorv32_tracer_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_tracer.vhd":37)
+Analyzing VHDL file 'E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_top.vhd'
+Analyzing entity 'neorv32_top'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_top.vhd":21)
+Analyzing architecture 'neorv32_top_rtl'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_top.vhd":250)
+Processing 'neorv32_test_setup_bootloader(neorv32_test_setup_bootloader_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_test_setup_bootloader.vhd":18)
+Processing 'neorv32_top(clock_frequency=27000000,riscv_isa_c=true,riscv_isa_m=true,riscv_isa_zicntr=true,imem_en=true,dmem_en=true,io_gpio_num=8,io_clint_en=true,io_uart0_en=true,io_uart1_en=true,io_twi_en=true,io_gptmr_num=1)(neorv32_top_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_top.vhd":21)
+Processing 'neorv32_sys_reset(neorv32_sys_reset_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":17)
+Processing 'neorv32_sys_clock(neorv32_sys_clock_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sys.vhd":97)
+Processing 'neorv32_cpu(hart_id=0,vendor_id="00000000000000000000000000000000",boot_addr="11111111111000000000000000000000",debug_park_addr="11111111111111111111111100000100",debug_exc_addr="11111111111111111111111100000000",riscv_isa_c=true,riscv_isa_e=false,riscv_isa_m=true,riscv_isa_u=false,riscv_isa_zaamo=false,riscv_isa_zalrsc=false,riscv_isa_zba=false,riscv_isa_zbb=false,riscv_isa_zbkb=false,riscv_isa_zbkc=false,riscv_isa_zbkx=false,riscv_isa_zbs=false,riscv_isa_zcb=false,riscv_isa_zfinx=false,riscv_isa_zibi=false,riscv_isa_zicntr=true,riscv_isa_zicond=false,riscv_isa_zihpm=false,riscv_isa_zimop=false,riscv_isa_zknd=false,riscv_isa_zkne=false,riscv_isa_zknh=false,riscv_isa_zksed=false,riscv_isa_zksh=false,riscv_isa_zmmul=false,riscv_isa_sdext=false,riscv_isa_sdtrig=false,riscv_isa_smcntrpmf=false,riscv_isa_smpmp=false,riscv_isa_xcfu=false,cpu_trace_en=false,cpu_constt_br_en=false,cpu_fast_mul_en=false,cpu_fast_shift_en=false,cpu_rf_arch_sel=0,pmp_num_regions=0,pmp_min_granularity=4,pmp_tor_mode_en=false,pmp_nap_mode_en=false,hpm_num_cnts=0,hpm_cnt_width=40,num_hw_triggers=0)(neorv32_cpu_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu.vhd":21)
+Processing 'neorv32_cpu_frontend(hart_id=0,riscv_c=true,riscv_zcb=false)(neorv32_cpu_frontend_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":22)
+'others' clause is never selected("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":146)
+Processing 'neorv32_cpu_frontend_ipb(awidth=1,dwidth=17)(neorv32_cpu_frontend_ipb_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":326)
+Extracting RAM for identifier 'ipb'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_frontend.vhd":355)
+Processing 'neorv32_cpu_decompressor(zcb_en=false)(neorv32_cpu_decompressor_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_decompressor.vhd":21)
+Processing 'neorv32_cpu_control(hart_id=0,vendor_id="00000000000000000000000000000000",boot_addr="11111111111000000000000000000000",debug_park_addr="11111111111111111111111100000100",debug_exc_addr="11111111111111111111111100000000",riscv_isa_a=false,riscv_isa_b=false,riscv_isa_c=true,riscv_isa_e=false,riscv_isa_m=true,riscv_isa_u=false,riscv_isa_zaamo=false,riscv_isa_zalrsc=false,riscv_isa_zcb=false,riscv_isa_zba=false,riscv_isa_zbb=false,riscv_isa_zbkb=false,riscv_isa_zbkc=false,riscv_isa_zbkx=false,riscv_isa_zbs=false,riscv_isa_zfinx=false,riscv_isa_zibi=false,riscv_isa_zicntr=true,riscv_isa_zicond=false,riscv_isa_zihpm=false,riscv_isa_zimop=false,riscv_isa_zkn=false,riscv_isa_zknd=false,riscv_isa_zkne=false,riscv_isa_zknh=false,riscv_isa_zks=false,riscv_isa_zksed=false,riscv_isa_zksh=false,riscv_isa_zkt=false,riscv_isa_zmmul=false,riscv_isa_sdext=false,riscv_isa_sdtrig=false,riscv_isa_smcntrpmf=false,riscv_isa_smpmp=false,riscv_isa_xcfu=false,cpu_constt_br_en=false)(neorv32_cpu_control_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_control.vhd":18)
+Processing 'neorv32_cpu_counters(zicntr_en=true,zihpm_en=false,smcntrpmf_en=false,umode_en=false,hpm_num=0,hpm_width=40)(neorv32_cpu_counters_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_counters.vhd":23)
+Processing 'neorv32_prim_cnt(cwidth=64)(neorv32_prim_cnt_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":332)
+Processing 'neorv32_cpu_regfile(dwidth=32,awidth=5,arch_sel=0)(neorv32_cpu_regfile_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_regfile.vhd":28)
+Processing 'neorv32_cpu_alu(riscv_isa_m=true,riscv_isa_zba=false,riscv_isa_zbb=false,riscv_isa_zbkb=false,riscv_isa_zbkc=false,riscv_isa_zbkx=false,riscv_isa_zbs=false,riscv_isa_zfinx=false,riscv_isa_zibi=false,riscv_isa_zicond=false,riscv_isa_zknd=false,riscv_isa_zkne=false,riscv_isa_zknh=false,riscv_isa_zksed=false,riscv_isa_zksh=false,riscv_isa_zmmul=false,riscv_isa_xcfu=false,fast_mul_en=false,fast_shift_en=false)(neorv32_cpu_alu_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu.vhd":18)
+'others' clause is never selected("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu.vhd":119)
+Processing 'neorv32_cpu_alu_shifter(fast_shift_en=false)(neorv32_cpu_alu_shifter_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_shifter.vhd":21)
+Processing 'neorv32_cpu_alu_muldiv(fast_mul_en=false,division_en=true)(neorv32_cpu_alu_muldiv_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_alu_muldiv.vhd":23)
+Processing 'neorv32_cpu_lsu(hart_id=0,amo_en=false)(neorv32_cpu_lsu_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_cpu_lsu.vhd":18)
+Processing 'neorv32_bus_switch(b_read_only=true)(neorv32_bus_switch_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":17)
+Processing 'neorv32_bus_gateway(tmo_int=16,tmo_ext=2048,a_en=true,a_base="00000000000000000000000000000000",a_size=16384,b_en=true,b_base="10000000000000000000000000000000",b_size=8192,c_en=true,c_base="11111111111000000000000000000000",c_size=2097152,x_en=false)(neorv32_bus_gateway_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":266)
+Processing 'neorv32_imem(mem_size=16384,mem_init=false,outreg=false)(neorv32_imem_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem.vhd":17)
+Processing 'neorv32_imem_ram(awidth=14,outreg=0)(neorv32_imem_ram_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_imem_ram.vhd":20)
+Processing 'neorv32_prim_spram(awidth=12,dwidth=8,outreg=0)(neorv32_prim_spram_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":168)
+Extracting RAM for identifier 'spram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":189)
+Processing 'neorv32_dmem(mem_size=8192,outreg=false)(neorv32_dmem_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem.vhd":17)
+Processing 'neorv32_dmem_ram(awidth=13,outreg=0)(neorv32_dmem_ram_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_dmem_ram.vhd":20)
+Processing 'neorv32_prim_spram(awidth=11,dwidth=8,outreg=0)(neorv32_prim_spram_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":168)
+Extracting RAM for identifier 'spram'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":189)
+Processing 'neorv32_bus_io_switch(dev_size=65536,dev_00_en=true,dev_00_base="11111111111000000000000000000000",dev_10_base="11111111111010100000000000000000",dev_11_base="11111111111010110000000000000000",dev_12_base="11111111111011000000000000000000",dev_13_base="11111111111011010000000000000000",dev_16_base="11111111111100000000000000000000",dev_17_en=true,dev_17_base="11111111111100010000000000000000",dev_18_base="11111111111100100000000000000000",dev_19_base="11111111111100110000000000000000",dev_20_en=true,dev_20_base="11111111111101000000000000000000",dev_21_en=true,dev_21_base="11111111111101010000000000000000",dev_22_en=true,dev_22_base="11111111111101100000000000000000",dev_23_base="11111111111101110000000000000000",dev_24_base="11111111111110000000000000000000",dev_25_en=true,dev_25_base="11111111111110010000000000000000",dev_26_base="11111111111110100000000000000000",dev_27_base="11111111111110110000000000000000",dev_28_en=true,dev_28_base="11111111111111000000000000000000",dev_29_base="11111111111111010000000000000000",dev_30_en=true,dev_30_base="11111111111111100000000000000000",dev_31_base="11111111111111110000000000000000")(neorv32_bus_io_switch_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":469)
+Processing 'neorv32_bus_reg(req_reg_en=true,rsp_reg_en=true)(neorv32_bus_reg_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bus.vhd":173)
+Processing 'neorv32_bootrom(neorv32_bootrom_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom.vhd":17)
+Processing 'neorv32_bootrom_rom(awidth=16)(neorv32_bootrom_rom_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_bootrom_rom.vhd":21)
+Processing 'neorv32_gpio(gpio_num=8)(neorv32_gpio_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gpio.vhd":17)
+'others' clause is never selected("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gpio.vhd":125)
+Processing 'neorv32_clint(num_harts=1)(neorv32_clint_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":21)
+Processing 'neorv32_clint_mtimecmp(neorv32_clint_mtimecmp_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_clint.vhd":218)
+Processing 'neorv32_uart(uart_rx_fifo=1,uart_tx_fifo=1)(neorv32_uart_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_uart.vhd":24)
+Processing 'neorv32_prim_fifo(awidth=0,dwidth=8,outgate=false)(neorv32_prim_fifo_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":24)
+Processing 'neorv32_twi(io_twi_fifo=1)(neorv32_twi_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_twi.vhd":18)
+Processing 'neorv32_prim_fifo(awidth=0,dwidth=11,outgate=false)(neorv32_prim_fifo_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":24)
+Processing 'neorv32_prim_fifo(awidth=0,dwidth=9,outgate=false)(neorv32_prim_fifo_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_prim.vhd":24)
+Processing 'neorv32_gptmr(num_slices=1)(neorv32_gptmr_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":20)
+Processing 'neorv32_gptmr_slice(neorv32_gptmr_slice_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_gptmr.vhd":211)
+Processing 'neorv32_sysinfo(bus_tmo_int=16,bus_tmo_ext=2048,num_harts=1,clock_frequency=27000000,boot_mode_select=0,int_bootloader_en=true,imem_en=true,imem_rom=false,imem_size=16384,dmem_en=true,dmem_size=8192,icache_en=false,icache_num_blocks=4,dcache_en=false,dcache_num_blocks=4,cache_block_size=64,cache_bursts_en=true,xbus_en=false,ocd_en=false,ocd_auth=false,io_gpio_en=true,io_clint_en=true,io_uart0_en=true,io_uart1_en=true,io_spi_en=false,io_sdi_en=false,io_twi_en=true,io_twd_en=false,io_pwm_en=false,io_wdt_en=false,io_trng_en=false,io_cfs_en=false,io_neoled_en=false,io_gptmr_en=true,io_onewire_en=false,io_dma_en=false,io_slink_en=false,io_tracer_en=false)(neorv32_sysinfo_rtl)'("E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\src\neorv32_sysinfo.vhd":18)
+NOTE  (EX0101) : Current top module is "neorv32_test_setup_bootloader"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\impl\gwsynthesis\fpga_project.vg" completed
+[100%] Generate report file "E:\Tailieuhoc\Nam4Ki2\DAHTS\Baitap\fpga_project\impl\gwsynthesis\fpga_project_syn.rpt.html" completed
+GowinSynthesis finish

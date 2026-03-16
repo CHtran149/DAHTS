@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hierarchy Module Resource</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 14px; }
+div#main_wrapper{ width: 100%; }
+h1 {text-align: center; }
+h1 {margin-top: 36px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { align = "center"; padding: 5px 2px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-color: #dee8f4; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="content">
+<h1>Hierarchy Module Resource</h1>
+<table>
+<tr>
+<th class="label">MODULE NAME</th>
+<th class="label">REG NUMBER</th>
+<th class="label">ALU NUMBER</th>
+<th class="label">LUT NUMBER</th>
+<th class="label">DSP NUMBER</th>
+<th class="label">BSRAM NUMBER</th>
+<th class="label">SSRAM NUMBER</th>
+<th class="label">ROM16 NUMBER</th>
+</tr>
+<tr>
+<td class="label">neorv32_test_setup_bootloader (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_test_setup_bootloader.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--neorv32_top_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_test_setup_bootloader.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--soc_generators.neorv32_sys_reset_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--soc_generators.neorv32_sys_clock_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">20</td>
+<td align = "center">11</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--core_complex_gen[0].neorv32_cpu_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">369</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_frontend_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">35</td>
+<td align = "center">-</td>
+<td align = "center">309</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--prefetch_buffer[0].ipb_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_frontend.vhd)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--prefetch_buffer[1].ipb_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_frontend.vhd)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--issue_enabled.neorv32_cpu_decompressor_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_frontend.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">20</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_control_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">447</td>
+<td align = "center">-</td>
+<td align = "center">812</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--cnts_enabled.neorv32_cpu_counters_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--base_enabled.cycle_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_counters.vhd)</td>
+<td align = "center">66</td>
+<td align = "center">-</td>
+<td align = "center">148</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--base_enabled.instret_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_counters.vhd)</td>
+<td align = "center">66</td>
+<td align = "center">-</td>
+<td align = "center">146</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_regfile_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">9</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_alu_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">97</td>
+<td align = "center">66</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_alu_shifter_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_alu.vhd)</td>
+<td align = "center">39</td>
+<td align = "center">-</td>
+<td align = "center">82</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_alu_muldiv_enabled.neorv32_cpu_alu_muldiv_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu_alu.vhd)</td>
+<td align = "center">137</td>
+<td align = "center">66</td>
+<td align = "center">220</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_cpu_lsu_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_cpu.vhd)</td>
+<td align = "center">102</td>
+<td align = "center">-</td>
+<td align = "center">99</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--core_complex_gen[0].neorv32_core_bus_switch_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">35</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_bus_gateway_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">86</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--memory_system.neorv32_imem_enabled.neorv32_imem_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">21</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--imem_ram.imem_ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_imem.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[0].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_imem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[1].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_imem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[2].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_imem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[3].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_imem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--memory_system.neorv32_dmem_enabled.neorv32_dmem_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--dmem_ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_dmem.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[0].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_dmem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[1].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_dmem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[2].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_dmem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ram_gen[3].ram_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_dmem_ram.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_bus_io_switch_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">91</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_bus_reg_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_bus.vhd)</td>
+<td align = "center">91</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_bootrom_enabled.neorv32_boot_rom_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--bootrom_rom_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_bootrom.vhd)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_gpio_enabled.neorv32_gpio_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">57</td>
+<td align = "center">-</td>
+<td align = "center">67</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_clint_enabled.neorv32_clint_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">34</td>
+<td align = "center">-</td>
+<td align = "center">116</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_clint_mtime_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_clint.vhd)</td>
+<td align = "center">65</td>
+<td align = "center">-</td>
+<td align = "center">145</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_clint.vhd)</td>
+<td align = "center">66</td>
+<td align = "center">126</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_uart0_enabled.neorv32_uart0_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">101</td>
+<td align = "center">-</td>
+<td align = "center">115</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--tx_engine_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_uart.vhd)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rx_engine_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_uart.vhd)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_uart1_enabled.neorv32_uart1_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">103</td>
+<td align = "center">-</td>
+<td align = "center">116</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--tx_engine_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_uart.vhd)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rx_engine_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_uart.vhd)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_twi_enabled.neorv32_twi_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">62</td>
+<td align = "center">4</td>
+<td align = "center">78</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--tx_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_twi.vhd)</td>
+<td align = "center">13</td>
+<td align = "center">-</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rx_fifo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_twi.vhd)</td>
+<td align = "center">11</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_gptmr_enabled.neorv32_gptmr_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">40</td>
+<td align = "center">-</td>
+<td align = "center">58</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--timer_slice_gen[0].neorv32_gptmr_slice_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_gptmr.vhd)</td>
+<td align = "center">65</td>
+<td align = "center">32</td>
+<td align = "center">90</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--io_system.neorv32_sysinfo_inst
+ (E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/fpga_project/src/neorv32_top.vhd)</td>
+<td align = "center">66</td>
+<td align = "center">-</td>
+<td align = "center">36</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

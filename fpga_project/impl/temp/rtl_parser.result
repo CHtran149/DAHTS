@@ -1,0 +1,452 @@
+[
+ {
+  "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_test_setup_bootloader.vhd",
+  "InstLine" : 18,
+  "InstName" : "neorv32_test_setup_bootloader",
+  "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_test_setup_bootloader.vhd",
+  "ModuleLine" : 18,
+  "ModuleName" : "neorv32_test_setup_bootloader",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_test_setup_bootloader.vhd",
+    "InstLine" : 58,
+    "InstName" : "neorv32_top_inst",
+    "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+    "ModuleLine" : 21,
+    "ModuleName" : "neorv32_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 431,
+      "InstName" : "soc_generators.neorv32_sys_reset_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_sys.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_sys_reset"
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 444,
+      "InstName" : "soc_generators.neorv32_sys_clock_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_sys.vhd",
+      "ModuleLine" : 97,
+      "ModuleName" : "neorv32_sys_clock"
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 482,
+      "InstName" : "core_complex_gen[0].neorv32_cpu_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+      "ModuleLine" : 21,
+      "ModuleName" : "neorv32_cpu",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 212,
+        "InstName" : "neorv32_cpu_frontend_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+        "ModuleLine" : 22,
+        "ModuleName" : "neorv32_cpu_frontend",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+          "InstLine" : 184,
+          "InstName" : "prefetch_buffer[0].ipb_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+          "ModuleLine" : 326,
+          "ModuleName" : "neorv32_cpu_frontend_ipb"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+          "InstLine" : 184,
+          "InstName" : "prefetch_buffer[1].ipb_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+          "ModuleLine" : 326,
+          "ModuleName" : "neorv32_cpu_frontend_ipb"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_frontend.vhd",
+          "InstLine" : 214,
+          "InstName" : "issue_enabled.neorv32_cpu_decompressor_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_decompressor.vhd",
+          "ModuleLine" : 21,
+          "ModuleName" : "neorv32_cpu_decompressor"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 237,
+        "InstName" : "neorv32_cpu_control_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_control.vhd",
+        "ModuleLine" : 18,
+        "ModuleName" : "neorv32_cpu_control"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 352,
+        "InstName" : "cnts_enabled.neorv32_cpu_counters_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_counters.vhd",
+        "ModuleLine" : 23,
+        "ModuleName" : "neorv32_cpu_counters",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_counters.vhd",
+          "InstLine" : 197,
+          "InstName" : "base_enabled.cycle_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 332,
+          "ModuleName" : "neorv32_prim_cnt"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_counters.vhd",
+          "InstLine" : 215,
+          "InstName" : "base_enabled.instret_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 332,
+          "ModuleName" : "neorv32_prim_cnt"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 379,
+        "InstName" : "neorv32_cpu_regfile_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_regfile.vhd",
+        "ModuleLine" : 28,
+        "ModuleName" : "neorv32_cpu_regfile"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 402,
+        "InstName" : "neorv32_cpu_alu_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_alu.vhd",
+        "ModuleLine" : 18,
+        "ModuleName" : "neorv32_cpu_alu",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_alu.vhd",
+          "InstLine" : 144,
+          "InstName" : "neorv32_cpu_alu_shifter_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_alu_shifter.vhd",
+          "ModuleLine" : 21,
+          "ModuleName" : "neorv32_cpu_alu_shifter"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_alu.vhd",
+          "InstLine" : 165,
+          "InstName" : "neorv32_cpu_alu_muldiv_enabled.neorv32_cpu_alu_muldiv_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_alu_muldiv.vhd",
+          "ModuleLine" : 23,
+          "ModuleName" : "neorv32_cpu_alu_muldiv"
+         }
+        ]
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu.vhd",
+        "InstLine" : 446,
+        "InstName" : "neorv32_cpu_lsu_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_cpu_lsu.vhd",
+        "ModuleLine" : 18,
+        "ModuleName" : "neorv32_cpu_lsu"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 617,
+      "InstName" : "core_complex_gen[0].neorv32_core_bus_switch_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bus.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_bus_switch"
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 777,
+      "InstName" : "neorv32_bus_gateway_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bus.vhd",
+      "ModuleLine" : 266,
+      "ModuleName" : "neorv32_bus_gateway"
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 826,
+      "InstName" : "memory_system.neorv32_imem_enabled.neorv32_imem_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_imem",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem.vhd",
+        "InstLine" : 100,
+        "InstName" : "imem_ram.imem_ram_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem_ram.vhd",
+        "ModuleLine" : 20,
+        "ModuleName" : "neorv32_imem_ram",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem_ram.vhd",
+          "InstLine" : 45,
+          "InstName" : "ram_gen[0].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem_ram.vhd",
+          "InstLine" : 45,
+          "InstName" : "ram_gen[1].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem_ram.vhd",
+          "InstLine" : 45,
+          "InstName" : "ram_gen[2].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_imem_ram.vhd",
+          "InstLine" : 45,
+          "InstName" : "ram_gen[3].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 849,
+      "InstName" : "memory_system.neorv32_dmem_enabled.neorv32_dmem_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_dmem",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem.vhd",
+        "InstLine" : 64,
+        "InstName" : "dmem_ram_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem_ram.vhd",
+        "ModuleLine" : 20,
+        "ModuleName" : "neorv32_dmem_ram",
+        "SubInsts" : [
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem_ram.vhd",
+          "InstLine" : 47,
+          "InstName" : "ram_gen[0].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem_ram.vhd",
+          "InstLine" : 47,
+          "InstName" : "ram_gen[1].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem_ram.vhd",
+          "InstLine" : 47,
+          "InstName" : "ram_gen[2].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         },
+         {
+          "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_dmem_ram.vhd",
+          "InstLine" : 47,
+          "InstName" : "ram_gen[3].ram_inst",
+          "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+          "ModuleLine" : 168,
+          "ModuleName" : "neorv32_prim_spram"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 919,
+      "InstName" : "io_system.neorv32_bus_io_switch_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bus.vhd",
+      "ModuleLine" : 469,
+      "ModuleName" : "neorv32_bus_io_switch",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bus.vhd",
+        "InstLine" : 590,
+        "InstName" : "neorv32_bus_reg_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bus.vhd",
+        "ModuleLine" : 173,
+        "ModuleName" : "neorv32_bus_reg"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 998,
+      "InstName" : "io_system.neorv32_bootrom_enabled.neorv32_boot_rom_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bootrom.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_bootrom",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bootrom.vhd",
+        "InstLine" : 54,
+        "InstName" : "bootrom_rom_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_bootrom_rom.vhd",
+        "ModuleLine" : 21,
+        "ModuleName" : "neorv32_bootrom_rom"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1067,
+      "InstName" : "io_system.neorv32_gpio_enabled.neorv32_gpio_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_gpio.vhd",
+      "ModuleLine" : 17,
+      "ModuleName" : "neorv32_gpio"
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1116,
+      "InstName" : "io_system.neorv32_clint_enabled.neorv32_clint_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_clint.vhd",
+      "ModuleLine" : 21,
+      "ModuleName" : "neorv32_clint",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_clint.vhd",
+        "InstLine" : 82,
+        "InstName" : "neorv32_clint_mtime_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 332,
+        "ModuleName" : "neorv32_prim_cnt"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_clint.vhd",
+        "InstLine" : 123,
+        "InstName" : "neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_clint.vhd",
+        "ModuleLine" : 218,
+        "ModuleName" : "neorv32_clint_mtimecmp"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1143,
+      "InstName" : "io_system.neorv32_uart0_enabled.neorv32_uart0_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+      "ModuleLine" : 24,
+      "ModuleName" : "neorv32_uart",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+        "InstLine" : 183,
+        "InstName" : "tx_engine_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+        "InstLine" : 212,
+        "InstName" : "rx_engine_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1174,
+      "InstName" : "io_system.neorv32_uart1_enabled.neorv32_uart1_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+      "ModuleLine" : 24,
+      "ModuleName" : "neorv32_uart",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+        "InstLine" : 183,
+        "InstName" : "tx_engine_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_uart.vhd",
+        "InstLine" : 212,
+        "InstName" : "rx_engine_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1236,
+      "InstName" : "io_system.neorv32_twi_enabled.neorv32_twi_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_twi.vhd",
+      "ModuleLine" : 18,
+      "ModuleName" : "neorv32_twi",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_twi.vhd",
+        "InstLine" : 163,
+        "InstName" : "tx_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       },
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_twi.vhd",
+        "InstLine" : 191,
+        "InstName" : "rx_fifo_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_prim.vhd",
+        "ModuleLine" : 24,
+        "ModuleName" : "neorv32_prim_fifo"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1368,
+      "InstName" : "io_system.neorv32_gptmr_enabled.neorv32_gptmr_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_gptmr.vhd",
+      "ModuleLine" : 20,
+      "ModuleName" : "neorv32_gptmr",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_gptmr.vhd",
+        "InstLine" : 140,
+        "InstName" : "timer_slice_gen[0].neorv32_gptmr_slice_inst",
+        "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_gptmr.vhd",
+        "ModuleLine" : 211,
+        "ModuleName" : "neorv32_gptmr_slice"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_top.vhd",
+      "InstLine" : 1485,
+      "InstName" : "io_system.neorv32_sysinfo_inst",
+      "ModuleFile" : "E:/Tailieuhoc/Nam4Ki2/DAHTS/Baitap/Baitaplon/fpga_project/src/neorv32_sysinfo.vhd",
+      "ModuleLine" : 18,
+      "ModuleName" : "neorv32_sysinfo"
+     }
+    ]
+   }
+  ]
+ }
+]
