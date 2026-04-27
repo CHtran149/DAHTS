@@ -20,6 +20,7 @@ APP_SRC += neorv32_lib/source/neorv32_twi.c
 APP_SRC += neorv32_lib/source/neorv32_aux.c
 APP_SRC += neorv32_lib/source/neorv32_rte.c
 APP_SRC += neorv32_lib/source/neorv32_cpu.c
+APP_SRC += neorv32_lib/source/neorv32_gpio.c
 # --------------------------------------------------------------------------
 
 # Tối ưu hóa dung lượng tối đa cho Tang Nano 9K
@@ -28,10 +29,10 @@ EFFORT = -Os
 # Thêm các cờ tối ưu hóa Linker
 USER_FLAGS += -ffunction-sections -fdata-sections
 USER_FLAGS += -Wl,--gc-sections
+USER_FLAGS += -mrelax
 
 # Đặt lại dung lượng chuẩn để kiểm soát lỗi khi Make
-USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=16k
-USER_FLAGS += -Wl,--defsym,__neorv32_ram_size=8k
+USER_FLAGS += -Wl,--defsym,__neorv32_ram_size=16k
 USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=32k
 
 # Đường dẫn NEORV32 root

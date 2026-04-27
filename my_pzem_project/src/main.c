@@ -6,27 +6,18 @@
 #include "fonts.h"
 
 #define OUT_PIN_BUZZER 0
-#define IN_PIN_BUTTON  0
+#define IN_PIN_UP   0  // Nút tăng
+#define IN_PIN_DOWN 1  // Nút giảm
 
 // --- KHAI BÁO PROTOTYPE ---
 void uart0_puts(const char *s);
 void uart0_putu(uint32_t n);
 void neorv32_uart_print_float(float value, int precision);
 void float_to_buf_fixed(char *buf, float val, int precision);
-static uint8_t last_button_state = 1;
-// --- BIẾN TOÀN CỤC ---
-volatile uint8_t button_event = 0; 
-float thresholds[] = {5.0f, 10.0f, 15.0f, 20.0f}; // Các mức ngưỡng xoay vòng
-volatile uint8_t threshold_index = 0;             // Chỉ số ngưỡng hiện tại
-uint8_t toggle_state = 1;                         // Trạng thái nhấp nháy (1 là tắt)
 
-// --- HÀM NGẮT (ISR) ---
-// void my_gpio_irq_handler(void) {
-//     if (neorv32_gpio_irq_get() & (1 << IN_PIN_BUTTON)) {
-//         button_event = 1; // Chỉ ghi nhận sự kiện nhấn nút
-//         NEORV32_GPIO->IRQ_PENDING = (1 << IN_PIN_BUTTON);
-//     }
-// }
+// --- BIẾN TOÀN CỤC ---
+
+float current_threshold = 20.0f;
 
 // --- HÀM HỖ TRỢ UART ---
 void uart0_puts(const char *s) {
@@ -81,19 +72,11 @@ void float_to_buf_fixed(char *buf, float val, int precision) {
 
 int main() {
     neorv32_uart0_setup(19200, 0);
+
     PZEM_Init(9600);
     neorv32_gpio_port_set(0x00000000);
-    // --- CẤU HÌNH NGẮT (RTE) ---
-    // neorv32_rte_setup(); 
-    // neorv32_rte_handler_install(GPIO_TRAP_CODE, my_gpio_irq_handler);
-    // neorv32_gpio_irq_setup(IN_PIN_BUTTON, GPIO_TRIG_EDGE_FALLING);
-    // neorv32_gpio_irq_enable(1 << IN_PIN_BUTTON);
-    // neorv32_cpu_csr_set(CSR_MIE, 1U << GPIO_FIRQ_ENABLE);
-    // neorv32_cpu_csr_set(CSR_MSTATUS, 1U << CSR_MSTATUS_MIE);
-
     neorv32_twi_setup(7, 0, 0); 
     neorv32_twi_enable();
-
     SSD1306_Name myOLED;
     SSD1306_Init(&myOLED);
     
@@ -113,44 +96,43 @@ int main() {
     SSD1306_GotoXY(&myOLED, 75, 52); SSD1306_Puts(&myOLED, "W", &Font_7x10, SSD1306_COLOR_WHITE);
     
     SSD1306_UpdateScreen(&myOLED);
-
-
     char val_buf[12];
 
+    neorv32_gpio_pin_set(OUT_PIN_BUZZER, 0);
     while (1) {
-        // 2. Xử lý sự kiện nút nhấn (Thay đổi ngưỡng)
-        // if (button_event) {
-        //     neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 50); // Debounce
-        //     if ((NEORV32_GPIO->PORT_IN & (1 << IN_PIN_BUTTON)) == 0) {
-        //         threshold_index = (threshold_index + 1) % 4; // Xoay vòng 0->1->2->3->0
-        //         uart0_puts("Mức ngưỡng mới: ");
-        //         neorv32_uart_print_float(thresholds[threshold_index], 1);
-        //         uart0_puts("W\r\n");
-        //     }
-        //     button_event = 0;
-        //     // Chờ nhả nút để không bị nhảy mức liên tục
-        //     while ((NEORV32_GPIO->PORT_IN & (1 << IN_PIN_BUTTON)) == 0);
-        // }
-
-        // 2. Xử lý nút nhấn KHÔNG GÂY KẸT (Non-blocking)
-        
-        uint8_t current_button_state = (NEORV32_GPIO->PORT_IN >> IN_PIN_BUTTON) & 1;
-
-        if (last_button_state == 1 && current_button_state == 0) { // Cạnh xuống
-            neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 20); // Debounce ngắn
-            threshold_index = (threshold_index + 1) % 4;
-        
-        // Chỉ in khi thay đổi để tránh tràn log
-            uart0_puts("\r\n--- New Threshold: ");
-            neorv32_uart_print_float(thresholds[threshold_index], 1);
-            uart0_puts("W ---\r\n");
-        }
-        last_button_state = current_button_state;
-
         // 1. Đọc dữ liệu từ PZEM
         PZEM_ReadAll(1000);
         float power = PZEM_GetPower();
-        float current_threshold = thresholds[threshold_index];
+        
+        // 2. XỬ LÝ NÚT NHẤN TĂNG (UP)
+        if (((NEORV32_GPIO->PORT_IN >> IN_PIN_UP) & 1) == 0) {
+            neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 50); // Debounce
+            if (((NEORV32_GPIO->PORT_IN >> IN_PIN_UP) & 1) == 0) {
+                if (current_threshold + 5.0f <= 200.0f) {
+                    current_threshold += 5.0f;
+                }
+                uart0_puts("Threshold Up: "); 
+                neorv32_uart_print_float(current_threshold, 1);
+                uart0_puts("W\r\n");
+                
+                while (((NEORV32_GPIO->PORT_IN >> IN_PIN_UP) & 1) == 0); // Chờ thả nút
+            }
+        }
+
+        // 3. XỬ LÝ NÚT NHẤN GIẢM (DOWN)
+        if (((NEORV32_GPIO->PORT_IN >> IN_PIN_DOWN) & 1) == 0) {
+            neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 50); // Debounce
+            if (((NEORV32_GPIO->PORT_IN >> IN_PIN_DOWN) & 1) == 0) {
+                if (current_threshold - 5.0f >= 0.0f) {
+                    current_threshold -= 5.0f;
+                }
+                uart0_puts("Threshold Down: "); 
+                neorv32_uart_print_float(current_threshold, 1);
+                uart0_puts("W\r\n");
+                
+                while (((NEORV32_GPIO->PORT_IN >> IN_PIN_DOWN) & 1) == 0); // Chờ thả nút
+            }
+        }
 
 
         // 4. In log UART tóm tắt (Gộp vào 1 dòng để tránh quá tải UART)
@@ -184,13 +166,11 @@ int main() {
         
         // 3. Logic Cảnh báo nhấp nháy
         if (power > current_threshold) {
-            toggle_state = !toggle_state; // Đảo trạng thái để nhấp nháy
-            neorv32_gpio_pin_set(OUT_PIN_BUZZER, toggle_state);
-        } else {
-            toggle_state = 1; // Đảm bảo tắt khi không quá tải
             neorv32_gpio_pin_set(OUT_PIN_BUZZER, 1);
+        } else {
+            neorv32_gpio_pin_set(OUT_PIN_BUZZER, 0);
         }
 
-        neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 200);
+        neorv32_aux_delay_ms(neorv32_sysinfo_get_clk(), 100);
     }
 }

@@ -5,16 +5,14 @@
 //Part Number: GW1NR-LV9QN88PC6/I5
 //Device: GW1NR-9
 //Device Version: C
-//Created Time: Mon 03 16 17:02:58 2026
+//Created Time: Sat 04 18 08:00:17 2026
 
 IO_LOC "uart1_txd_o" 31;
 IO_PORT "uart1_txd_o" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
 IO_LOC "uart0_txd_o" 17;
 IO_PORT "uart0_txd_o" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
-// Cảnh báo (Buzzer)
 IO_LOC "gpio_o[0]" 27;
 IO_PORT "gpio_o[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
-
 IO_LOC "twi_scl_io" 26;
 IO_PORT "twi_scl_io" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
 IO_LOC "twi_sda_io" 25;
@@ -23,7 +21,8 @@ IO_LOC "uart1_rxd_i" 32;
 IO_PORT "uart1_rxd_i" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
 IO_LOC "uart0_rxd_i" 18;
 IO_PORT "uart0_rxd_i" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
-// Nút nhấn (Mute)
+IO_LOC "gpio_i[1]" 29;
+IO_PORT "gpio_i[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
 IO_LOC "gpio_i[0]" 28;
 IO_PORT "gpio_i[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
 IO_LOC "rstn_i" 4;
